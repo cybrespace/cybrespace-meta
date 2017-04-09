@@ -3,7 +3,7 @@
 After modifying any of the following files, you'll need to run the following
 command:
 
-RAILS_ENV=production bundle exec rails assets:precompile
+    RAILS_ENV=production bundle exec rails assets:precompile
 
 ## Colors
 
