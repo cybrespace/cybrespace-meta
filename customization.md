@@ -105,13 +105,13 @@ you're doing:
 
 Add the following lines to `app/assets/stylesheets/custom.scss`:
 
-   @media screen and (min-width: 1300px) {
-      .column {
-        flex-grow: 1 !important;
-        max-height:100vh;
-      }
+       @media screen and (min-width: 1300px) {
+          .column {
+            flex-grow: 1 !important;
+            max-height:100vh;
+          }
 
-      .drawer {
-        width: 20%;
+          .drawer {
+            width: 20%;
+          }
       }
-  }
