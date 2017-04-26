@@ -7,21 +7,16 @@ command:
 
 ## Colors
 
-99% of color customization is done in the following file:
+As of 1.1 you can change colors in your custom.scss:
 
-    app/assets/stylesheets/variables.scss 
+    app/assets/stylesheets/custom.scss 
 
-There are eight colors you can change. You probably shouldn't mess with the last
-four:
+There are four colors you can change.
 
     $color1: #282c37; // darkest
     $color2: #d9e1e8; // lightest
     $color3: #9baec8; // lighter
     $color4: #2b90d9; // vibrant
-    $color5: #ffffff; // white
-    $color6: #df405a; // error red
-    $color7: #79bd9a; // succ green
-    $color8: #000000; // black
 
 $color1 controls background colors, like the backdrop and the column panel
 backgrounds.
@@ -108,14 +103,15 @@ you're doing:
 
 ## Incorporating the variable-width column userstyle:
 
-Add the following lines to `app/assets/stylesheets/components.scss` (around line 747 would be good for clarity):
+Add the following lines to `app/assets/stylesheets/custom.scss`:
 
-    @media (min-width: 1600px) {
+   @media screen and (min-width: 1300px) {
       .column {
-        width: 25%;
+        flex-grow: 1 !important;
+        max-height:100vh;
       }
 
       .drawer {
-        width: 23%;
+        width: 20%;
       }
-    }
+  }
